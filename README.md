@@ -1,6 +1,6 @@
 # cloud_illegal
 
-https://i.imgur.com/yIQs4xi.jpg?raw=true "Title")
+![banner](https://i.imgur.com/yIQs4xi.jpg)
 
 Esx_Illegal + Kypo_Drug_Effects w/ Overdose by **Cloud10Dev**
 
