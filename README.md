@@ -13,6 +13,23 @@ ___________________________
 
 Modify the **esx_basicneeds** (included on the zip im giving), changed every **“stress”** to **“drug”**.
 
+ORIGINAL:
+````
+AddEventHandler('esx_basicneeds:resetStatus', function()
+	TriggerEvent('esx_status:set', 'hunger', 500000)
+	TriggerEvent('esx_status:set', 'thirst', 500000)
+	TriggerEvent('esx_status:set', 'stress', 100000)
+end)
+````
+
+MODIFIED:
+````
+AddEventHandler('esx_basicneeds:resetStatus', function()
+	TriggerEvent('esx_status:set', 'hunger', 500000)
+	TriggerEvent('esx_status:set', 'thirst', 500000)
+	TriggerEvent('esx_status:set', 'drug', 100000)
+end)
+````
 ___________________________
 
 **STEP 2 -**
@@ -20,6 +37,21 @@ ___________________________
 Go to **kypo-drug-effect** and on **server.lua**, on every drug you have add this line above the other trigger:
 
 **TriggerClientEvent(‘esx_status:add’, source, ‘drug’, 430000)** - 430000 is the ammout that it will give as drug
+
+**Like this:**
+
+````
+ESX.RegisterUsableItem('coke', function(source)
+        
+        local _source = source
+	local xPlayer = ESX.GetPlayerFromId(_source)
+	xPlayer.removeInventoryItem('coke', 1)
+
+
+	TriggerClientEvent('esx_status:add', source, 'drug', 430000)
+	TriggerClientEvent('kypo-drug-effect:onCoke', source)
+end)
+````
 
 ___________________________
 
