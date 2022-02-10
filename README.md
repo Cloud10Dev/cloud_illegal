@@ -1,37 +1,37 @@
 # cloud_illegal
-Esx_Illegal + Kypo_Drug_Effects w/ Overdose by Cloud10Dev
+Esx_Illegal + Kypo_Drug_Effects w/ Overdose by **Cloud10Dev**
 
-Good Afternoon dear community, today i will realease my first modification on a script that i didnt found here on the forum.
+**Good Afternoon dear community, today i will realease my first modification on a script that i didnt found here on the forum.**
 
-So, this is basically the esx_illegal by Xovos.
+So, this is basically the **esx_illegal by Xovos with kypo-drug-effects**.
 
 How i made it?
 
 ___________________________
 
-STEP 1 -
+**STEP 1 -**
 
-Modify the esx_basicneeds (included on the zip im giving), changed every “stress” to “drug”.
+Modify the **esx_basicneeds** (included on the zip im giving), changed every **“stress”** to **“drug”**.
 
 ___________________________
 
-STEP 2 -
+**STEP 2 -**
 
-Go to kypo-drug-effect and on server.lua, on every drug you have add this line above the other trigger:
+Go to **kypo-drug-effect** and on **server.lua**, on every drug you have add this line above the other trigger:
 
-TriggerClientEvent(‘esx_status:add’, source, ‘drug’, 430000) - 430000 is the ammout that it will give as drug
+**TriggerClientEvent(‘esx_status:add’, source, ‘drug’, 430000)** - 430000 is the ammout that it will give as drug
 
 ___________________________
 
 With my share, these are the stats of the drugs:
 
-EFFECTS:
+**EFFECTS:**
 - Weed: Give Health Boost +Gives Half Armour! (easy to get the drug)
 - Coke: Gives Speed Boost! (easy to get the drug)
 - Meth: Full Health + Full Armour! (hard to get the drug)
 - Heroin: Lowers health to half + Full Armour! (easy to get the drug)
 
-OVERDOSE:
+**OVERDOSE:**
 - Weed: dies with 8 doses
 - Coke: dies with 3 doses
 - Meth: dies with 2 doses
@@ -41,13 +41,13 @@ ___________________________
 
 What if you just want to add the overdose to your drug?
 
-Add to client.lua where you make drugs usable:
+Add to **client.lua** where you make drugs usable:
 
 local IsAlreadyDrug = false
 local DrugLevel = -1
 
 Then, bellow esx:getSharedObject, add:
-
+````
 AddEventHandler('esx_status:loaded', function(status)
 
   TriggerEvent('esx_status:registerStatus', 'drug', 0, '#9ec617', 
@@ -132,15 +132,15 @@ function overdose()
     SetPedMotionBlur(playerPed, false)
   end)
 end
-
+````
 ___________________________
 
-REMEMBERING THAT THE DRUGS SPOTS ARE WHERE I WANTED THEM, YOU MAYBE WONT HAVE THE YMAPS/MLO FOR THEM, SO, YOU GOTTA CHANGE THE POSITIONS OF THEM. ALSO, I DISABLED LSD/LSA/CHEMICALS
+**REMEMBERING THAT THE DRUGS SPOTS ARE WHERE I WANTED THEM, YOU MAYBE WONT HAVE THE YMAPS/MLO FOR THEM, SO, YOU GOTTA CHANGE THE POSITIONS OF THEM. ALSO, I DISABLED LSD/LSA/CHEMICALS**
 
 ___________________________
 
 
 Thank you, and i will try to give support!
 
-
+**Discord:** CloudDev#0810
 
