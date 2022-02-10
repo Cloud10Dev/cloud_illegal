@@ -43,8 +43,10 @@ What if you just want to add the overdose to your drug?
 
 Add to **client.lua** where you make drugs usable:
 
+````
 local IsAlreadyDrug = false
 local DrugLevel = -1
+````
 
 Then, bellow esx:getSharedObject, add:
 ````
