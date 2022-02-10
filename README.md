@@ -66,7 +66,7 @@ With my share, these are the stats of the drugs:
 - Heroin: Lowers health to half + Full Armour! (easy to get the drug)
 
 **OVERDOSE:**
-- Weed: dies with 8 doses
+- Weed: dies with 10 doses
 - Coke: dies with 3 doses
 - Meth: dies with 2 doses
 - Heroin: dies with 2 doses
