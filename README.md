@@ -14,7 +14,7 @@ How i made it?
 
 ___________________________
 
-**STEP 1 -**
+![step1](https://imgur.com/a/1vpqKwW)
 
 Modify the **esx_basicneeds** (included on the zip im giving), changed every **“stress”** to **“drug”**.
 
@@ -37,7 +37,7 @@ end)
 ````
 ___________________________
 
-**STEP 2 -**
+![step1](https://imgur.com/a/FsR9oMf)
 
 Go to **kypo-drug-effect** and on **server.lua**, on every drug you have add this line above the other trigger:
 
