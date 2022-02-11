@@ -10,7 +10,7 @@ ___________________________
 
 So, this is basically the **esx_illegal by Xovos with kypo-drug-effects**.
 
-How i made it?
+This modification is about dying if consuming too much drugs. To prevent abusing from drug effects
 
 ___________________________
 
